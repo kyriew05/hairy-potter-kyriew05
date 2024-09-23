@@ -4,7 +4,7 @@ import { usePottery } from "./potteryCatalog.js"
 export const potteryList = () => {
     let potteryHTML = ''
 
-    for (const pottery of usePottery()) {
+    for (const pottery of usePottery()) { //converts the objects in the array into html
     potteryHTML += `
     <section class="pottery" id="pottery--1">
      <h2 class="pottery__shape">${pottery.shape}</h2>
